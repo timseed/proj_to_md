@@ -10,5 +10,5 @@ print(level(3, "Layout"))
 print(code('text', t))
 print(level(2, "Code Listing"))
 for f in files:
-    print(level(3, f.split('/')[-1]))
+    print(level(3, f))
     print(dump_file('python', f))
