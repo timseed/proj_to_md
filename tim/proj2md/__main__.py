@@ -1,5 +1,5 @@
-from tim.utils.proj2md import dir_tree, get_arguments
-from tim.utils.proj2md.fakedown import *
+from tim.proj2md import dir_tree, get_arguments
+from tim.proj2md.fakedown import *
 
 args = get_arguments()
 proj = args.dir

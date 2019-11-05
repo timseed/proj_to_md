@@ -3,3 +3,4 @@ build/
 dist/
 proj_to_md.egg-info/
 __pycache__
+proj2md.egg-info
