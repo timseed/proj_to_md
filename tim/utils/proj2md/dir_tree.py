@@ -1,7 +1,7 @@
 import os
 
 
-def getListOfFiles(dirName:str) -> str:
+def getListOfFiles(dirName: str) -> str:
     """
     create a list of file and sub directories
     names in the given directory
@@ -25,7 +25,7 @@ def getListOfFiles(dirName:str) -> str:
     return allfiles
 
 
-def dir_tree(startpath: str, wanted_files: list = ['py', 'sh']) -> (str, list):
+def dir_tree(startpath: str, wanted_files: list = ["py", "sh"]) -> (str, list):
     rv = ""
     flz = getListOfFiles(startpath)
     wanted_flz = []
@@ -35,9 +35,9 @@ def dir_tree(startpath: str, wanted_files: list = ['py', 'sh']) -> (str, list):
         suffix = os.path.splitext(f)[1]
         if suffix[1:] in wanted_files:
             level = f.count(os.sep) - start_level
-            index = ' ' * 2 * level
+            index = " " * 2 * level
             tree_str.append(f"{index}{f[len(startpath):]}\n")
             wanted_flz.append(f)
     tree_str.sort(reverse=True)
-    tv  = ''.join(n for n in tree_str)
+    tv = "".join(n for n in tree_str)
     return tv, wanted_flz

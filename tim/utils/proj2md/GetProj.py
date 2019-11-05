@@ -54,12 +54,22 @@ def valid_TF(s):
 
 
 def get_arguments():
-    parser = argparse.ArgumentParser(description='Project to md')
-    parser.add_argument('-d',
-                        '--directory', dest='dir',
-                        required=True,
-                        metavar='Directory', type=dir_exists,
-                        help='Project directory')
-    parser.add_argument('-t', '--types', nargs='+', help='Output only file types [py,sh] default', required=False)
+    parser = argparse.ArgumentParser(description="Project to md")
+    parser.add_argument(
+        "-d",
+        "--directory",
+        dest="dir",
+        required=True,
+        metavar="Directory",
+        type=dir_exists,
+        help="Project directory",
+    )
+    parser.add_argument(
+        "-t",
+        "--types",
+        nargs="+",
+        help="Output only file types [py,sh] default",
+        required=False,
+    )
     args = parser.parse_args()
     return args
