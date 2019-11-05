@@ -67,9 +67,11 @@ def get_arguments():
     parser.add_argument(
         "-t",
         "--types",
-        nargs="+",
-        help="Output only file types [py,sh] default",
+        action="append",
+        dest="file_types",
+        help="Output only file types [py] default. Use multiple -t to add more file types",
         required=False,
+        default=["py"]
     )
     args = parser.parse_args()
     return args

@@ -15,7 +15,13 @@ A python script was installed as part of the pip-install. TO invoke this just ty
 
     proj2md
 
-It will most likely respond with an error as it is expecting a direcory 
+It will most likely respond with an error as it is expecting a directory
+
+```text
+usage: __main__.py [-h] -d Directory [-t TYPES [TYPES ...]]
+__main__.py: error: the following arguments are required: -d/--directory 
+```
+
 
 So ....
 
