@@ -60,6 +60,10 @@ def get_arguments():
                         required=True,
                         metavar='Directory', type=dir_exists,
                         help='Project directory')
-    parser.add_argument('-t', '--types', nargs='+', help='Output only file types [py,sh] default', required=False)
+    parser.add_argument('-t', '--types',
+                        default=['py'],
+                        nargs='+',
+                        help='Output only file types [py,sh] default',
+                        required=False)
     args = parser.parse_args()
     return args
