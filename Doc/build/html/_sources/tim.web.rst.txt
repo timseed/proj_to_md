@@ -1,0 +1,17 @@
+tim.web package
+===============
+
+Subpackages
+-----------
+
+.. toctree::
+
+   tim.web.controllers
+
+Module contents
+---------------
+
+.. automodule:: tim.web
+   :members:
+   :undoc-members:
+   :show-inheritance:
