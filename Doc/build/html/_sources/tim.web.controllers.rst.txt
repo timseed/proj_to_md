@@ -1,0 +1,30 @@
+tim.web.controllers package
+===========================
+
+Submodules
+----------
+
+tim.web.controllers.app module
+------------------------------
+
+.. automodule:: tim.web.controllers.app
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tim.web.controllers.obj\_a module
+---------------------------------
+
+.. automodule:: tim.web.controllers.obj_a
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: tim.web.controllers
+   :members:
+   :undoc-members:
+   :show-inheritance:
