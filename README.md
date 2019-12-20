@@ -49,6 +49,6 @@ To output a MD file just pipe it
 
 Sphinx Docs available at 
 
-[./Doc/build.html/index.html](./Doc/build.html/index.html)
+[./Doc/build/html/index.html](./Doc/build/html/index.html)
 
 
